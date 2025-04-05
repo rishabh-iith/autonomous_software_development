@@ -70,18 +70,3 @@ When prompted, enter your main task requirement. The system will handle the rest
 - The code contains API keys and credentials - consider using environment variables or a secure credential manager instead of hardcoding sensitive information
 - Rotating between multiple API keys helps prevent rate limiting issues with the Gemini API
 
-## Future Enhancements
-
-- Add support for custom fields in Jira tickets
-- Implement webhook integration for real-time updates
-- Add a GUI interface for easier interaction
-- Include estimation capabilities for generated tasks
-- Add support for additional AI providers beyond Gemini
-
-## License
-
-[Insert your license information here]
-
-## Contributors
-
-[Your name and contact information]
