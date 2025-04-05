@@ -457,7 +457,7 @@ Priority: {tc['priority']}
 # ========== MAIN PROGRAM ==========
 if __name__ == "__main__":
     # Step 1: Get the main task requirement from user input
-    requirement = input("Enter the main task/requirement: ") # You can mention the project as "Flight Tracking System" here
+    requirement = input("Enter the main task requirement: ") # You can mention the project as "Flight Tracking System" here
 
     # Step 2: Create a parent ticket for the main requirement
     print("\nCreating parent ticket for the main requirement...")
