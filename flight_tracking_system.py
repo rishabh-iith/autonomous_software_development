@@ -8,7 +8,7 @@ import google.generativeai as genai
 # === Jira Credentials & Constants ===
 # Credentials for authenticating with the Jira API
 EMAIL = "imrishabh9@gmail.com"
-API_TOKEN = "ATATT3xFfGF0KJeCW79dxuKt6rRSAWJxNOIElL2amLqLAbqssMpK-zC4vTINDXhWmm8IaSvRDpb2aESz1TPXB34AvSbYctwO_1kzQ56lzD8MeG9iMRtGqJVJmFjW-m_rs8W4Z3XEDcp4acRb9-q9ln6XPeBoiv51CUtzXaPmLUuGSWBoYod6Zrs=3239D6F2"
+API_TOKEN = "ATATT3xFfGF071JDKSCle8ZFeLknCdZjMfU55BO3pcfTcx-stlQ8qfyqvMFdF1l0Z_hIADhyaDCwZbCQp0KYyoKIKZ4bLeGnUCrE8FBgqXERLp_T8iotrBtzFdGQG8M857r_asqpajC_3YcmlxFwpIEGWl3mDD7mqQcOe3w8OCQ2-4ghsQoSQGU=989256DB"
 JIRA_BASE_URL = "https://imrishabh9.atlassian.net"
 PROJECT_KEY = "CPG" # The project key in Jira where tickets will be created
 
