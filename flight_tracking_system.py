@@ -21,7 +21,7 @@ headers = {
 
 # === Gemini API Configuration ===
 # Multiple API keys for rotating when rate limits are hit
-gemini_keys = ['AIzaSyBygmSahMqMh_lAVfskpO_cKFHyrkzYJTc','AIzaSyCWDnUTjAbu7GjfXj1J9iUZfhB8dJ1x6qk','AIzaSyDPQ4AjKwe7XCad59h0QDuvXjdK5CBQDHI','AIzaSyCot7LtzWoiy8tlaUQEEAL55hO8cifTp00']
+gemini_keys = ['AIzaSyCmY2g3L_jSi7a_yxNRymRrnto3ljFFdpo','AIzaSyAr4LhdqqYeEMy1RCinwEGXwkvXV7IISeQ','AIzaSyAFGQZXMBjPAY8iY1NbaFWx0wVim-Xr6DI','AIzaSyCzqqs7hiD0hHsV7oTJnnplV5x4vyA_Hts','AIzaSyDIXSStO9e2INRHRnTxcqluv5CkjieypOs','AIzaSyC4Z0rELJ1Ee3rAbxAWF6KvzUkDTdinl0Y','AIzaSyDLPFaFFNS7Ji0nVAb07-18nI0uDZIZTn8','AIzaSyAIH1EfjgABR49sgo_FVDjwS9OYFH6EQZE']
 current_gemini_index = 0
 
 # ========== GEMINI API FUNCTIONS ==========
