@@ -2,11 +2,11 @@
 
 A sophisticated Python-based automation tool that revolutionizes the software development workflow by intelligently decomposing high-level requirements into actionable tasks, creating structured Jira tickets, and generating comprehensive test cases using Google's Gemini AI.
 
-## 📋 Overview
+## Overview
 
 This system addresses the common challenge of breaking down complex software development tasks into manageable components. It leverages the power of Google's Gemini AI to analyze requirements, generate appropriate subtasks, and create corresponding Jira tickets automatically. Additionally, it produces detailed test cases for each subtask, streamlining the entire development process from initial requirement to testing phase.
 
-## ✨ Key Features
+## Key Features
 
 - **Intelligent Task Decomposition**: Analyzes high-level requirements and automatically decomposes them into 3-5 distinct, non-overlapping subtasks
 - **Comprehensive Jira Integration**: Creates parent tasks, subtasks, and establishes appropriate linking relationships
@@ -16,7 +16,7 @@ This system addresses the common challenge of breaking down complex software dev
 - **Robust Error Handling**: Gracefully handles API failures and provides meaningful error messages
 - **Proper Task Relationships**: Establishes and verifies parent-child relationships between tickets
 
-## 🔄 How It Works
+## How It Works
 
 1. **Input Collection**: The user enters a high-level task requirement (e.g., "Implement user authentication system")
 2. **Parent Ticket Creation**: The system creates a parent Jira ticket for the main requirement
@@ -34,7 +34,7 @@ This system addresses the common challenge of breaking down complex software dev
    - Creates test cases as linked subtasks in Jira
 8. **Verification**: Displays all created tickets to confirm successful creation
 
-## 🧩 Code Architecture
+## Code Architecture
 
 The system is structured into several functional modules:
 
@@ -70,7 +70,7 @@ gemini_keys = ['key1', 'key2', 'key3', 'key4', 'key5']
 ### Test Case Generation
 - `generate_and_create_test_cases(task_description, task_key)`: Generates test cases for a task and creates them as subtasks
 
-## 📊 Example Output
+## Example Output
 
 ### Example Requirement
 ```
@@ -124,7 +124,7 @@ Implement a flight tracking system with real-time updates and user notifications
 }
 ```
 
-## 🔧 Technical Implementation
+## Technical Implementation
 
 ### Prompt Engineering
 The system uses carefully crafted prompts to get high-quality results from the Gemini API:
@@ -241,7 +241,7 @@ def create_jira_ticket(summary: str, description: str):
    # ... and so on for other variables
    ```
 
-## 📝 Usage
+## Usage
 
 ### Basic Usage
 Run the script and follow the prompts:
@@ -261,20 +261,3 @@ The system will:
 4. Generate test cases for each subtask
 5. Create test case subtasks in Jira
 6. Display all created tickets
-
-### Advanced Options
-You can modify the script to:
-- Change the number of subtasks generated (3-5 is the default)
-- Adjust the test case generation parameters
-- Customize the ticket creation process
-- Add custom fields to Jira tickets
-
-## 🔒 Security Best Practices
-
-The current implementation includes hardcoded credentials, which is not recommended for production use. Consider:
-
-1. Using environment variables or a secure credential manager
-2. Implementing proper authentication and authorization checks
-3. Adding API request rate limiting
-4. Implementing logging for security auditing
-5. Sanitizing user inputs to prevent injection attacks
