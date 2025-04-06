@@ -194,52 +194,73 @@ def create_jira_ticket(summary: str, description: str):
     # ... [implementation details]
 ```
 
-## 🛠️ Setup and Installation
+# Jira Automation Tool
 
-### Prerequisites
-- Python 3.6+
-- Jira account with API access
-- Google Gemini API key(s)
-- Required Python packages:
-  - requests
-  - google.generativeai
-  - json
-  - time
+This repository contains a tool that integrates with Jira's API to automate ticket management and reporting.
 
-### Installation Steps
-1. Clone this repository:
-   ```
-   git clone https://github.com/yourusername/flight-tracking-system.git
-   cd flight-tracking-system
-   ```
+## Setup Instructions
 
-2. Install required dependencies:
-   ```
-   pip install requests google-generativeai
-   ```
+Before using this tool, you'll need to configure your Jira credentials and settings.
 
-3. Configure your credentials:
-   Either edit the configuration section in the script or create a `.env` file with your credentials:
-   ```
-   JIRA_EMAIL=your-email@example.com
-   JIRA_API_TOKEN=your-jira-api-token
-   JIRA_BASE_URL=https://your-domain.atlassian.net
-   JIRA_PROJECT_KEY=YPK
-   GEMINI_API_KEY_1=your-gemini-api-key-1
-   GEMINI_API_KEY_2=your-gemini-api-key-2
-   # ... add more keys as needed
-   ```
+### 1. Replace with Your Email ID
 
-4. (Optional) If using a `.env` file, modify the script to load from it:
-   ```python
-   from dotenv import load_dotenv
-   import os
-   
-   load_dotenv()
-   EMAIL = os.getenv("JIRA_EMAIL")
-   API_TOKEN = os.getenv("JIRA_API_TOKEN")
-   # ... and so on for other variables
-   ```
+In the code, update the constant EMAIL with your own email address associated with your Atlassian (Jira) account:
+
+```python
+EMAIL = "your-email@example.com"  # Replace with your own email
+```
+
+### 2. Generate Jira API Token
+
+Generate an API token for Jira authentication:
+1. Visit [Atlassian API Token Generator](https://id.atlassian.com/manage-profile/security/api-tokens)
+2. Click "Create API token"
+3. Name your token and copy it
+4. Replace the constant API_TOKEN in the code with your token:
+
+```python
+API_TOKEN = "your-generated-api-token"  # Replace with your generated API token
+```
+
+### 3. Set Up Your Jira Base URL
+
+Create a project on Jira and navigate to your Jira board. Identify your Jira domain (workspace) and update the JIRA_BASE_URL constant:
+
+```python
+JIRA_BASE_URL = "https://your-domain.atlassian.net"  # Replace with your actual Jira workspace
+```
+
+For example, if your workspace name is exampleworkspace, it should be: 
+`JIRA_BASE_URL = "https://exampleworkspace.atlassian.net"`
+
+### 4. Verify and Update Your Project Key
+
+On your Jira board, create a test ticket to verify your project key. The project key is the prefix in your issue keys (e.g., CPG, FTS, FT). Update the PROJECT_KEY constant accordingly:
+
+```python
+PROJECT_KEY = "YOUR_PROJECT_KEY"  # Replace with your actual project key (e.g., CPG, FTS, FT)
+```
+
+### 5. (Optional) Update Gemini API Keys
+
+The code includes default Gemini API keys in the gemini_keys list. They should work as provided, but you can generate new keys if needed from [Google's Gemini API](https://makersuite.google.com/app/apikey).
+
+If you generate your own, update the list accordingly:
+
+```python
+gemini_keys = ['your-first-gemini-api-key', 'your-second-gemini-api-key']
+```
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/jira-automation-tool.git
+cd jira-automation-tool
+
+# Install dependencies
+pip install -r requirements.txt
+```
 
 ## Usage
 
