@@ -194,10 +194,6 @@ def create_jira_ticket(summary: str, description: str):
     # ... [implementation details]
 ```
 
-# Jira Automation Tool
-
-This repository contains a tool that integrates with Jira's API to automate ticket management and reporting.
-
 ## Setup Instructions
 
 Before using this tool, you'll need to configure your Jira credentials and settings.
